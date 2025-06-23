@@ -4,11 +4,24 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12pt;
+}
+
 body {
   background-color: darkslategrey;
   color: white;
-  padding: 0;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.009375rem;
+  background: #121212;
+  color: rgb(255 255 255 / 87%); /* 87% white */
   margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -38,13 +51,15 @@ main > section > h2 {
   text-align: center;
 }
 
+
 .start-btn {
+  color: black;
+  background-color: #e3e3e3;
   padding: 1.5rem;
-  background-color: forestgreen;
-  color: white;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.5rem;
+  border-radius: 24pt;
 }
 
 .start-btn:hover {
