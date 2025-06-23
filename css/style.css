@@ -21,7 +21,7 @@ body {
   background: #121212;
   color: rgb(255 255 255 / 87%); /* 87% white */
   margin: 0;
-  padding: 0;
+  padding: 12pt;
 }
 
 h1 {
@@ -41,6 +41,7 @@ main > section {
   padding-bottom: 2rem;
   margin-top: 2rem;
   width: 100%;
+  border-radius: 24pt;
 }
 
 main > section:nth-child(2n-1) {
@@ -53,6 +54,16 @@ main > section > h2 {
 
 
 .start-btn {
+  color: black;
+  background-color: #e3e3e3;
+  padding: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 24pt;
+}
+
+.bck-btn {
   color: black;
   background-color: #e3e3e3;
   padding: 1.5rem;

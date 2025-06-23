@@ -190,7 +190,7 @@ export default class Base2DScene extends Phaser.Scene {
       (projectile, npc) => {
         if (projectile && projectile.destroy) {
           projectile.destroy()
-          npc.damage(projectile.attackPower)
+          npc.damage(projectile.attackPower || 5)
         }
       },
     )

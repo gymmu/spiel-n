@@ -83,7 +83,7 @@ export default class UIScene extends Phaser.Scene {
 
   create() {
     this.hpElement = this.add.text(this.cameras.main.width, 0, "HP: --", {
-      color: "#00ff00",
+      color: "#fc6f5f",
       align: "right",
     })
     this.hpElement.setOrigin(1, 0)
