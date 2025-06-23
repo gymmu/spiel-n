@@ -8,6 +8,7 @@
     "lint": "prettier --check .",
     "lint-fix": "prettier --write .",
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf docs",
