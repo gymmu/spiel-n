@@ -18,4 +18,3 @@ EXPOSE 5173
 
 # Set the default command to run your application
 CMD ["npm", "start"]
-
