@@ -88,11 +88,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   baseSpeed = 100
   gotHit = false
   isAttacking = false
-  attackSpeed = 10
+  attackSpeed = 100
   inventory = new Array(6).fill(null) // Inventar mit 6 Slots initialisieren
   lastDirection = { x: 0, y: 1 } // Default: down
 
-  constructor(scene, x, y) {
+  constructor (scene, x, y) {
     super(scene, x, y, "player")
     this.scene.add.existing(this)
     this.scene.physics.add.existing(this, false)
@@ -123,6 +123,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     if (index !== -1) {
       this.inventory[index] = item
       EVENTS.emit("update-inventory", this.inventory)
+      // log the state of the inventory to the console
+      console.log(this.inventory)
       return true
     }
     return false
@@ -276,9 +278,33 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Wenn die Richtung nicht 0 ist, dann erstellen wir ein Projectile
       if (dir.lengthSq() > 0) {
-        new Projectile(this.scene, this.x, this.y, dir)
+        console.log('Inventory:', this.inventory)
+        // Check if there is a stone in the inventory
+        let stoneIndex = -1;
+        for (let i = 0; i < this.inventory.length; i++) {
+          console.log('Checking item at index', i, this.inventory[i])
+          if (this.inventory[i]) {
+            console.log('Found stone at index', i)
+            stoneIndex = i;
+            break;
+          }
+
+        }
+
+        if (stoneIndex !== -1) {
+          console.log('Stone found, removing from inventory')
+          // Remove the stone from the inventory
+          this.removeItemFromInventory(stoneIndex)
+          // Create a new projectile
+          new Projectile(this.scene, this.x, this.y, dir)
+        } else {
+          console.log('No stone found in inventory')
+          // Handle the case when there is no stone in the inventory
+        }
       }
     }
+
+
 
     // Wenn der Spieler getroffen wurde, lasse ihn blinken
     if (this.gotHit) {

@@ -46,5 +46,8 @@
   "git.enableSmartCommit": false,
   "git.suggestSmartCommit": false,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
-  "markdown.validate.enabled": true
+  "markdown.validate.enabled": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
