@@ -74,6 +74,12 @@
                  "height":0,
                  "id":9,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"keyName",
+                         "type":"string",
+                         "value":"level-02"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -217,11 +223,6 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":20
-                        }, 
-                        {
-                         "name":"keyName",
-                         "type":"string",
-                         "value":"level-02"
                         }, 
                         {
                          "name":"restoreHp",

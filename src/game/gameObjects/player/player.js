@@ -82,6 +82,7 @@ export function createPlayer(scene, map) {
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   keys = {}
+  lvlCompleted = false
   hp = 10
   maxHp = 100
   speed = 100

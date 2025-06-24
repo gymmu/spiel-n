@@ -4,14 +4,14 @@ import Player from "./player.js"
 
 export default class NPC extends Phaser.Physics.Arcade.Sprite {
   hp = 10
-  maxHp = 100
+  maxHp = 20
   #speed = 100
   stepsLeft = 60
   move = "left"
   attackPower = 5
   isInvulnerable = false
 
-  constructor(scene, x, y) {
+  constructor (scene, x, y) {
     super(scene, x, y, "npc")
     this.scene.add.existing(this)
     this.scene.physics.add.existing(this, false)
@@ -97,7 +97,6 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
 
   damage(value) {
     if (this.isInvulnerable) return
-
     this.isInvulnerable = true
     this.scene.time.delayedCall(1000, () => {
       this.isInvulnerable = false
@@ -106,6 +105,7 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     if (value == null) value = 0
     this.hp = this.hp - value
     if (this.hp <= 0) {
+      this.scene.player.lvlCompleted = true
       this.destroy()
     }
   }

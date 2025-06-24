@@ -2,7 +2,7 @@ import StaticObject from "../staticObject"
 import { registerGameObject } from "../registry"
 
 export default class Flower extends StaticObject {
-  constructor(scene, x, y, properties) {
+  constructor (scene, x, y, properties) {
     super(scene, x, y, "pickups", "flower", properties)
 
     this.setOrigin(0, 0)
@@ -15,12 +15,6 @@ export default class Flower extends StaticObject {
   onCollide(player) {
     //super.onCollide(player)
     player.heal(this.props.healAmount || 5)
-
-    // Wenn die Blume einen Schlüssel hat, geben wir ihn dem Spieler
-    if (this.props.keyName) {
-      player.addKey(this.props.keyName)
-    }
-
     if (this.scene.cameraManager) {
       this.scene.cameraManager.cameraMaskRadius += 50
       this.scene.cameraManager.setCameraMask()
