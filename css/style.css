@@ -112,3 +112,17 @@ main > section > h2 {
 .text-with-image > img {
     width: 70%;
 }
+
+code, pre {
+  background-color: #e0e2ec; /* surface-variant */
+  color: #44474e; /* on-surface-variant */
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.875rem; /* body-medium.size */
+  letter-spacing: 0.015625rem; /* body-medium.tracking */
+  line-height: 1.25rem; /* body-medium.line-height */
+}
+
+code {
+  border-radius: 8px;
+  padding: 0.25rem;
+}

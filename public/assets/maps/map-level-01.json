@@ -30,19 +30,19 @@
         }, 
         {
          "data":[11, 12, 8, 12, 12, 12, 12, 12, 12, 8, 12, 12, 12, 7, 8, 12, 12, 12, 8, 10,
-            11, 9, 9, 9, 0, 0, 0, 0, 0, 0, 6, 6, 2, 0, 0, 0, 0, 2, 6, 10,
-            11, 0, 0, 0, 0, 0, 0, 9, 0, 6, 6, 6, 2, 2, 2, 2, 0, 2, 6, 10,
-            11, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 6, 2, 0, 0, 0, 0, 2, 6, 10,
-            11, 0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 2, 0, 2, 2, 2, 2, 6, 10,
-            11, 0, 5, 2, 2, 2, 2, 2, 2, 2, 8, 12, 8, 0, 8, 12, 8, 6, 6, 10,
-            11, 0, 0, 2, 2, 5, 6, 6, 6, 6, 0, 0, 0, 0, 0, 0, 0, 6, 6, 10,
-            11, 0, 9, 2, 2, 0, 6, 6, 6, 6, 0, 0, 0, 0, 0, 0, 0, 6, 6, 10,
-            11, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 10,
-            11, 0, 0, 2, 2, 9, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 5, 6, 10,
-            11, 9, 0, 2, 2, 5, 6, 0, 6, 5, 2, 2, 6, 6, 6, 6, 6, 6, 6, 10,
-            11, 0, 0, 2, 2, 2, 5, 0, 6, 5, 2, 2, 6, 6, 6, 6, 6, 6, 6, 10,
-            11, 0, 0, 0, 9, 0, 0, 0, 6, 5, 2, 6, 6, 6, 6, 6, 6, 6, 6, 10,
-            11, 0, 0, 0, 0, 0, 0, 0, 6, 5, 2, 6, 6, 6, 6, 6, 6, 6, 6, 10,
+            11, 9, 9, 9, 0, 0, 0, 0, 0, 0, 6, 6, 9, 0, 0, 0, 0, 9, 6, 10,
+            11, 0, 0, 0, 0, 0, 0, 9, 0, 6, 6, 6, 9, 9, 9, 9, 0, 9, 6, 10,
+            11, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 6, 9, 0, 0, 0, 0, 9, 6, 10,
+            11, 0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 9, 0, 9, 9, 9, 9, 6, 10,
+            11, 0, 5, 0, 0, 0, 0, 0, 0, 0, 8, 12, 8, 0, 8, 12, 8, 6, 6, 10,
+            11, 0, 0, 0, 0, 5, 6, 6, 6, 6, 0, 0, 0, 0, 0, 0, 0, 6, 6, 10,
+            11, 0, 9, 0, 9, 0, 6, 6, 6, 6, 0, 0, 0, 0, 0, 0, 0, 6, 6, 10,
+            11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 10,
+            11, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 9, 9, 9, 9, 0, 0, 5, 6, 10,
+            11, 9, 0, 0, 0, 5, 6, 0, 6, 5, 9, 9, 6, 6, 6, 6, 6, 6, 6, 10,
+            11, 0, 0, 0, 0, 0, 5, 0, 6, 5, 9, 9, 6, 6, 6, 6, 6, 6, 6, 10,
+            11, 0, 0, 0, 9, 0, 0, 0, 6, 5, 9, 6, 6, 6, 6, 6, 6, 6, 6, 10,
+            11, 0, 0, 0, 0, 0, 0, 0, 6, 5, 9, 6, 6, 6, 6, 6, 6, 6, 6, 10,
             8, 12, 12, 8, 12, 12, 12, 12, 8, 12, 8, 12, 12, 12, 12, 12, 8, 12, 12, 12],
          "height":15,
          "id":2,
@@ -257,6 +257,444 @@
                  "width":32,
                  "x":256,
                  "y":288
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":28,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":128.8,
+                 "y":223.2
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":37,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":96,
+                 "y":256.8
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":29,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":96,
+                 "y":223.6
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":30,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":96,
+                 "y":192
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":31,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":129.2,
+                 "y":191.2
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":32,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":160.4,
+                 "y":192
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":33,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":192,
+                 "y":192
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":34,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":224,
+                 "y":192
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":35,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":255.6,
+                 "y":192
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":36,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":288.8,
+                 "y":191.6
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":19,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":128,
+                 "y":287.2
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":20,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":95.6,
+                 "y":288.8
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":21,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":96.4,
+                 "y":320
+                },
+            
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":22,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":128.4,
+                 "y":320.4
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":23,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":128,
+                 "y":351.6
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":24,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":96.4,
+                 "y":351.2
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":25,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":96,
+                 "y":382.8
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":26,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":127.6,
+                 "y":383.2
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":27,
+                 "name":"Stone",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":159.6,
+                 "y":384.4
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -299,7 +737,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":13,
+ "nextobjectid":38,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.1",

@@ -3,7 +3,7 @@ import Phaser from "phaser"
  * Spiellogik für das Level02.
  */
 export default class LoadingScene extends Phaser.Scene {
-  constructor() {
+  constructor () {
     super({ key: "loading" })
   }
 
@@ -26,7 +26,7 @@ export default class LoadingScene extends Phaser.Scene {
 
   create() {
     this.add
-      .text(320, 240, "Press SPACE to start the Game.")
+      .text(320, 200, "Press SPACE to start the Game. ")
       .setOrigin(0.5, 0.5)
   }
 
