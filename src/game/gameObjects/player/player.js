@@ -353,16 +353,21 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hp = this.hp - value
     if (this.hp <= 0) {
       this.hp = 0
-      // Get the key of the current scene
+      // clwer inventory
+      for (let i = this.inventory.length - 1; i >= 0; i--) {
+        this.removeItemFromInventory(i);
+      }
+      // get current scene
       const levelKey = this.scene.mapKey
 
-      // Restart the same scene again
+      // restart the scene
       this.scene.scene.start("world", { map: levelKey })
     }
 
     // Gleich wie bei `heal()`
     EVENTS.emit("update-hp", this.hp)
   }
+
 
   /**
    * Fügt dem Spieler einen Schlüssel hinzu.
