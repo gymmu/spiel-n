@@ -28,7 +28,7 @@ export default class Base2DScene extends Phaser.Scene {
   /**
    * Erstellt eine Instanz einer Phaser.Szene.
    */
-  constructor() {
+  constructor () {
     super({ key: "world" })
     this.cameraManager = new CameraManager(this)
   }
@@ -62,6 +62,11 @@ export default class Base2DScene extends Phaser.Scene {
     this.createPlayerObject()
     this.cameraManager.createCamera()
     this.setupDefaultCollisions()
+
+    // load music
+    this.backgroundMusic = this.sound.add('backgroundMusic')
+    this.backgroundMusic.setLoop(true)
+    this.backgroundMusic.play()
 
     // In dieser Scene werden Lebenspunkte und andere Dinge angezeigt.
     this.scene.bringToTop("ui-scene")
