@@ -1,7 +1,7 @@
 # Backlog
 
 - [x] README.md erstellen
-- [ ] Contributors ausfüllen in `package.json` (gleiches Format wie author)
+- [x] Contributors ausfüllen in `package.json` (gleiches Format wie author)
 - [x] Dokumentation vollständig durchlesen
 - [x] Name des Spiels ändern
 - [x] Spielidee auf der Webseite beschreiben (kann später noch erweitert werden)
