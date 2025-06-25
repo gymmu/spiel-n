@@ -353,7 +353,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hp = this.hp - value
     if (this.hp <= 0) {
       this.hp = 0
-      // clwer inventory
+      // clear inventory
       for (let i = this.inventory.length - 1; i >= 0; i--) {
         this.removeItemFromInventory(i);
       }
