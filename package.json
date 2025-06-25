@@ -1,7 +1,7 @@
 {
   "name": "spiel-n",
   "homepage": "https://gymmu.github.io/gymmu/spiel-n",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
     "deploy": "gh-pages -d docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "e227474",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^6.3.0",
