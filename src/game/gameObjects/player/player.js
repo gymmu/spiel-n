@@ -357,6 +357,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       for (let i = this.inventory.length - 1; i >= 0; i--) {
         this.removeItemFromInventory(i);
       }
+      // reset camera mask
+      this.scene.cameraManager.cameraMaskRadius = 120
+      this.scene.cameraManager.setCameraMask()
       // get current scene
       const levelKey = this.scene.mapKey
 
