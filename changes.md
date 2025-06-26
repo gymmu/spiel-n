@@ -15,3 +15,8 @@
 - added background music
 - fixed issues with levels
 - updated docs
+
+## Version 1.0.0
+- make the game playbale
+ - all levels can be completed
+ - no major breakage like the background missing exists anymore
