@@ -21,10 +21,21 @@ export default class Cave extends StaticObject {
     }
 
     // Lese die benötigten Eigenschaften der Türe aus
-    const { goToWorld, needKey } = this.props
+    const { goToWorld, gameover } = this.props
 
     // Wenn kein Ziel gesetzt ist, mache nichts
-    if (goToWorld == null) return
+    if (gameover) {
+      // clear inventory
+      for (let i = this.scene.player.inventory.length - 1; i >= 0; i--) {
+        this.scene.player.removeItemFromInventory(i);
+      }
+      // reset camera
+      this.scene.cameraManager.cameraMaskRadius = 120
+      this.scene.cameraManager.setCameraMask()
+
+      this.scene.scene.start("ending")
+      return
+    }
 
     // Wenn kein Schlüssel gebraucht wird, geh direkt zum Level
     if (actor.lvlCompleted) {

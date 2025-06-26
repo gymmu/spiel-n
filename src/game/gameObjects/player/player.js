@@ -436,4 +436,5 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const droppedItem = new itemClass(this.scene, x + 32, y, item.props || [])
     this.scene.items.add(droppedItem)
   }
+
 }
