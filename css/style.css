@@ -12,6 +12,11 @@ img {
   border-radius: 12pt;
 }
 
+.tile-img {
+  height: auto;
+  max-width: 124px;
+}
+
 body {
   background-color: darkslategrey;
   color: white;
@@ -22,6 +27,8 @@ body {
   color: rgb(255 255 255 / 87%); /* 87% white */
   margin: 0;
   padding: 12pt;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
