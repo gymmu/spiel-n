@@ -28,7 +28,7 @@ export default class Base2DScene extends Phaser.Scene {
   /**
    * Erstellt eine Instanz einer Phaser.Szene.
    */
-  constructor() {
+  constructor () {
     super({ key: "world" })
     this.cameraManager = new CameraManager(this)
   }
@@ -63,6 +63,11 @@ export default class Base2DScene extends Phaser.Scene {
     this.cameraManager.createCamera()
     this.setupDefaultCollisions()
 
+    // load music
+    this.backgroundMusic = this.sound.add('backgroundMusic')
+    this.backgroundMusic.setLoop(true)
+    this.backgroundMusic.play()
+
     // In dieser Scene werden Lebenspunkte und andere Dinge angezeigt.
     this.scene.bringToTop("ui-scene")
 
@@ -83,6 +88,13 @@ export default class Base2DScene extends Phaser.Scene {
     // Erstellt die Karte so wie sie in `mapKey` definiert ist.
     this.map = this.make.tilemap({ key: mapKey })
 
+    // set the world bound to the size of the map
+    this.physics.world.setBounds(
+      0,
+      0,
+      this.map.widthInPixels,
+      this.map.heightInPixels
+    )
     // Verwendet die Kacheln von "tileset" so wie es in **Tiled** verwendet wird.
     this.tiles = this.map.addTilesetImage("tileset")
 
@@ -190,7 +202,7 @@ export default class Base2DScene extends Phaser.Scene {
       (projectile, npc) => {
         if (projectile && projectile.destroy) {
           projectile.destroy()
-          npc.damage(projectile.attackPower)
+          npc.damage(projectile.attackPower || 5)
         }
       },
     )

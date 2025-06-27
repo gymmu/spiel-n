@@ -29,21 +29,21 @@
          "y":0
         }, 
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 8, 8, 8, 8, 8, 0, 8, 6, 6, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 0, 0, 0, 0, 0, 6, 6, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 5, 0, 0, 0, 6, 2, 6, 6, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 5, 5, 6, 0, 0, 6, 6, 6, 6, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 5, 5, 0, 0, 2, 6, 6, 6, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 5, 6, 5, 0, 0, 6, 6, 6, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 2, 0, 0, 0, 0, 6, 6, 0, 0, 0,
-            6, 6, 6, 6, 6, 6, 0, 0, 5, 5, 6, 0, 0, 0, 0, 2, 6, 0, 0, 0,
-            6, 0, 0, 0, 0, 6, 6, 6, 2, 2, 2, 0, 0, 0, 0, 6, 2, 2, 0, 0,
-            5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 2, 2, 0, 0,
-            2, 0, 2, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 2, 0, 0, 0,
-            2, 0, 2, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 0,
-            2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "data":[11, 8, 12, 12, 8, 12, 12, 8, 12, 12, 12, 12, 8, 12, 12, 0, 12, 12, 8, 10,
+            11, 6, 6, 6, 6, 6, 6, 6, 6, 0, 6, 6, 0, 9, 9, 0, 0, 6, 6, 10,
+            11, 6, 5, 6, 3, 6, 6, 6, 6, 0, 6, 0, 0, 0, 0, 9, 0, 0, 6, 10,
+            11, 6, 6, 6, 6, 5, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 10,
+            11, 6, 4, 3, 6, 6, 6, 0, 0, 0, 0, 6, 0, 0, 5, 6, 0, 0, 6, 10,
+            11, 6, 5, 6, 6, 6, 6, 0, 0, 0, 6, 0, 6, 0, 6, 0, 0, 0, 6, 10,
+            11, 6, 6, 6, 6, 6, 6, 0, 0, 0, 6, 0, 0, 0, 5, 0, 0, 5, 6, 10,
+            11, 6, 6, 6, 6, 6, 0, 0, 0, 9, 0, 0, 6, 0, 0, 6, 0, 3, 6, 10,
+            11, 0, 0, 0, 0, 6, 6, 0, 0, 9, 9, 9, 0, 0, 0, 6, 6, 0, 6, 10,
+            11, 0, 6, 0, 0, 9, 6, 0, 0, 9, 9, 9, 9, 0, 0, 0, 0, 0, 6, 10,
+            11, 6, 5, 6, 0, 0, 9, 0, 0, 0, 9, 9, 9, 9, 0, 0, 0, 0, 6, 10,
+            11, 6, 6, 6, 6, 0, 0, 0, 0, 0, 0, 9, 9, 5, 0, 0, 6, 6, 5, 10,
+            11, 0, 0, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 6, 6, 10,
+            11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 3, 6, 10,
+            11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 10],
          "height":15,
          "id":2,
          "name":"Obstacles",
@@ -67,8 +67,42 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":48,
-                 "y":416
+                 "x":258.246,
+                 "y":414.077
+                }, 
+                {
+                 "height":0,
+                 "id":13,
+                 "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"keyName",
+                         "type":"string",
+                         "value":"level-03"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":439.722,
+                 "y":415.364
+                }, 
+                {
+                 "height":0,
+                 "id":14,
+                 "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"keyName",
+                         "type":"string",
+                         "value":"level-03"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":61.5354,
+                 "y":416.005
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -116,6 +150,24 @@
                  "width":32,
                  "x":448,
                  "y":320
+                }, 
+                {
+                 "gid":3,
+                 "height":32,
+                 "id":54,
+                 "name":"Mushroom",
+                 "properties":[
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":20
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":448,
+                 "y":353.973
                 }, 
                 {
                  "gid":3,
@@ -210,6 +262,24 @@
                 {
                  "gid":4,
                  "height":32,
+                 "id":55,
+                 "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":511.359,
+                 "y":225.53
+                }, 
+                {
+                 "gid":4,
+                 "height":32,
                  "id":9,
                  "name":"Flower",
                  "properties":[
@@ -260,6 +330,476 @@
                  "width":32,
                  "x":32,
                  "y":288
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":15,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":287.831,
+                 "y":188.427
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":17,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":223.091,
+                 "y":160.865
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":18,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":287.19,
+                 "y":128.815
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":19,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":258.345,
+                 "y":127.533
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":20,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":289.754,
+                 "y":62.7925
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":23,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":225.014,
+                 "y":287.14
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":25,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":255.14,
+                 "y":287.781
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":27,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":225.655,
+                 "y":318.549
+                },
+            
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":29,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":257.704,
+                 "y":320.472
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":31,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":225.014,
+                 "y":351.881
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":33,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":255.781,
+                 "y":351.881
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":35,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":223.091,
+                 "y":382.648
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":37,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":255.14,
+                 "y":384.571
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":39,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":477.565,
+                 "y":383.93
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":41,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":480.77,
+                 "y":353.163
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":43,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":481.411,
+                 "y":321.113
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":45,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":510.897,
+                 "y":318.549
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":47,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":512,
+                 "y":352
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":49,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":544.691,
+                 "y":352
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":51,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":544.691,
+                 "y":319.95
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":53,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":546.614,
+                 "y":289.824
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":21,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":289.754,
+                 "y":62.7925
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":22,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":225.014,
+                 "y":287.14
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":24,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":255.14,
+                 "y":287.781
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":26,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":225.655,
+                 "y":318.549
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":28,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":257.704,
+                 "y":320.472
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":30,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":225.014,
+                 "y":351.881
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":32,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":255.781,
+                 "y":351.881
+                },
+            
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":34,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":223.091,
+                 "y":382.648
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":36,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":255.14,
+                 "y":384.571
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":38,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":477.565,
+                 "y":383.93
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":40,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":480.77,
+                 "y":353.163
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":42,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":481.411,
+                 "y":321.113
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":44,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":510.897,
+                 "y":318.549
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":46,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":512,
+                 "y":352
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":48,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":544.691,
+                 "y":352
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":50,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":544.691,
+                 "y":319.95
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":52,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":546.614,
+                 "y":289.824
+                }, 
+                {
+                 "gid":2,
+                 "height":32,
+                 "id":16,
+                 "name":"Stone",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":254.499,
+                 "y":160.224
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -297,22 +837,22 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":13,
+ "nextobjectid":56,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.2",
+ "tiledversion":"1.11.1",
  "tileheight":32,
  "tilesets":[
         {
          "columns":4,
          "firstgid":1,
          "image":"..\/tileset.png",
-         "imageheight":68,
+         "imageheight":102,
          "imagewidth":136,
          "margin":1,
          "name":"tileset",
          "spacing":2,
-         "tilecount":8,
+         "tilecount":12,
          "tileheight":32,
          "tiles":[
                 {
@@ -344,6 +884,42 @@
                 }, 
                 {
                  "id":7,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":8,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":9,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":10,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":11,
                  "properties":[
                         {
                          "name":"collides",

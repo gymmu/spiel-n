@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="13">
+<map version="1.10" tiledversion="1.11.1" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="56">
  <editorsettings>
   <export target="../public/assets/maps/map-level-02.json" format="json"/>
  </editorsettings>
@@ -25,25 +25,35 @@
  </layer>
  <layer id="2" name="Obstacles" width="20" height="15">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,5,5,8,8,8,8,8,0,8,6,6,0,
-0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,6,6,0,
-0,0,0,0,0,0,0,0,5,5,6,5,0,0,0,6,2,6,6,0,
-0,0,0,0,0,0,0,0,5,6,5,5,6,0,0,6,6,6,6,0,
-0,0,0,0,0,0,0,0,5,5,6,5,5,0,0,2,6,6,6,0,
-0,0,0,0,0,0,0,0,5,6,5,6,5,0,0,6,6,6,0,0,
-0,0,0,0,0,0,0,0,5,6,2,0,0,0,0,6,6,0,0,0,
-6,6,6,6,6,6,0,0,5,5,6,0,0,0,0,2,6,0,0,0,
-6,0,0,0,0,6,6,6,2,2,2,0,0,0,0,6,2,2,0,0,
-5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,2,2,0,0,
-2,0,2,5,5,5,5,5,6,6,6,6,6,6,6,6,2,0,0,0,
-2,0,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,8,12,12,8,12,12,8,12,12,12,12,8,12,12,0,12,12,8,10,
+11,6,6,6,6,6,6,6,6,0,6,6,0,9,9,0,0,6,6,10,
+11,6,5,6,3,6,6,6,6,0,6,0,0,0,0,9,0,0,6,10,
+11,6,6,6,6,5,6,6,0,0,0,0,0,0,0,0,0,5,6,10,
+11,6,4,3,6,6,6,0,0,0,0,6,0,0,5,6,0,0,6,10,
+11,6,5,6,6,6,6,0,0,0,6,0,6,0,6,0,0,0,6,10,
+11,6,6,6,6,6,6,0,0,0,6,0,0,0,5,0,0,5,6,10,
+11,6,6,6,6,6,0,0,0,9,0,0,6,0,0,6,0,3,6,10,
+11,0,0,0,0,6,6,0,0,9,9,9,0,0,0,6,6,0,6,10,
+11,0,6,0,0,9,6,0,0,9,9,9,9,0,0,0,0,0,6,10,
+11,6,5,6,0,0,9,0,0,0,9,9,9,9,0,0,0,0,6,10,
+11,6,6,6,6,0,0,0,0,0,0,9,9,5,0,0,6,6,5,10,
+11,0,0,6,6,0,0,0,0,0,0,0,0,0,0,6,5,6,6,10,
+11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,3,6,10,
+11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,10
 </data>
  </layer>
  <objectgroup id="3" name="SpawnPoints">
-  <object id="12" name="SpawnPlayer" x="48" y="416"/>
+  <object id="12" name="SpawnPlayer" x="258.246" y="414.077"/>
+  <object id="13" name="NPC" x="439.722" y="415.364">
+   <properties>
+    <property name="keyName" value="level-03"/>
+   </properties>
+  </object>
+  <object id="14" name="NPC" x="61.5354" y="416.005">
+   <properties>
+    <property name="keyName" value="level-03"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="Items">
   <object id="2" name="Mushroom" gid="3" x="448" y="288" width="32" height="32">
@@ -52,6 +62,11 @@
    </properties>
   </object>
   <object id="3" name="Mushroom" gid="3" x="448" y="320" width="32" height="32">
+   <properties>
+    <property name="damageHp" type="int" value="20"/>
+   </properties>
+  </object>
+  <object id="54" name="Mushroom" gid="3" x="448" y="353.973" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="20"/>
    </properties>
@@ -81,6 +96,11 @@
     <property name="restoreHp" type="int" value="10"/>
    </properties>
   </object>
+  <object id="55" name="Flower" gid="4" x="511.359" y="225.53" width="32" height="32">
+   <properties>
+    <property name="restoreHp" type="int" value="10"/>
+   </properties>
+  </object>
   <object id="9" name="Flower" gid="4" x="352" y="224" width="32" height="32">
    <properties>
     <property name="restoreHp" type="int" value="10"/>
@@ -96,6 +116,45 @@
     <property name="restoreHp" type="int" value="10"/>
    </properties>
   </object>
+  <object id="15" name="Stone" gid="2" x="287.831" y="188.427" width="32" height="32"/>
+  <object id="17" name="Stone" gid="2" x="223.091" y="160.865" width="32" height="32"/>
+  <object id="18" name="Stone" gid="2" x="287.19" y="128.815" width="32" height="32"/>
+  <object id="19" name="Stone" gid="2" x="258.345" y="127.533" width="32" height="32"/>
+  <object id="20" name="Stone" gid="2" x="289.754" y="62.7925" width="32" height="32"/>
+  <object id="23" name="Stone" gid="2" x="225.014" y="287.14" width="32" height="32"/>
+  <object id="25" name="Stone" gid="2" x="255.14" y="287.781" width="32" height="32"/>
+  <object id="27" name="Stone" gid="2" x="225.655" y="318.549" width="32" height="32"/>
+  <object id="29" name="Stone" gid="2" x="257.704" y="320.472" width="32" height="32"/>
+  <object id="31" name="Stone" gid="2" x="225.014" y="351.881" width="32" height="32"/>
+  <object id="33" name="Stone" gid="2" x="255.781" y="351.881" width="32" height="32"/>
+  <object id="35" name="Stone" gid="2" x="223.091" y="382.648" width="32" height="32"/>
+  <object id="37" name="Stone" gid="2" x="255.14" y="384.571" width="32" height="32"/>
+  <object id="39" name="Stone" gid="2" x="477.565" y="383.93" width="32" height="32"/>
+  <object id="41" name="Stone" gid="2" x="480.77" y="353.163" width="32" height="32"/>
+  <object id="43" name="Stone" gid="2" x="481.411" y="321.113" width="32" height="32"/>
+  <object id="45" name="Stone" gid="2" x="510.897" y="318.549" width="32" height="32"/>
+  <object id="47" name="Stone" gid="2" x="512" y="352" width="32" height="32"/>
+  <object id="49" name="Stone" gid="2" x="544.691" y="352" width="32" height="32"/>
+  <object id="51" name="Stone" gid="2" x="544.691" y="319.95" width="32" height="32"/>
+  <object id="53" name="Stone" gid="2" x="546.614" y="289.824" width="32" height="32"/>
+  <object id="21" name="Stone" gid="2" x="289.754" y="62.7925" width="32" height="32"/>
+  <object id="22" name="Stone" gid="2" x="225.014" y="287.14" width="32" height="32"/>
+  <object id="24" name="Stone" gid="2" x="255.14" y="287.781" width="32" height="32"/>
+  <object id="26" name="Stone" gid="2" x="225.655" y="318.549" width="32" height="32"/>
+  <object id="28" name="Stone" gid="2" x="257.704" y="320.472" width="32" height="32"/>
+  <object id="30" name="Stone" gid="2" x="225.014" y="351.881" width="32" height="32"/>
+  <object id="32" name="Stone" gid="2" x="255.781" y="351.881" width="32" height="32"/>
+  <object id="34" name="Stone" gid="2" x="223.091" y="382.648" width="32" height="32"/>
+  <object id="36" name="Stone" gid="2" x="255.14" y="384.571" width="32" height="32"/>
+  <object id="38" name="Stone" gid="2" x="477.565" y="383.93" width="32" height="32"/>
+  <object id="40" name="Stone" gid="2" x="480.77" y="353.163" width="32" height="32"/>
+  <object id="42" name="Stone" gid="2" x="481.411" y="321.113" width="32" height="32"/>
+  <object id="44" name="Stone" gid="2" x="510.897" y="318.549" width="32" height="32"/>
+  <object id="46" name="Stone" gid="2" x="512" y="352" width="32" height="32"/>
+  <object id="48" name="Stone" gid="2" x="544.691" y="352" width="32" height="32"/>
+  <object id="50" name="Stone" gid="2" x="544.691" y="319.95" width="32" height="32"/>
+  <object id="52" name="Stone" gid="2" x="546.614" y="289.824" width="32" height="32"/>
+  <object id="16" name="Stone" gid="2" x="254.499" y="160.224" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
   <object id="1" name="Cave" gid="7" x="480" y="32" width="32" height="32">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="13">
+<map version="1.10" tiledversion="1.11.1" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="38">
  <editorsettings>
   <export target="../public/assets/maps/map-level-01.json" format="json"/>
  </editorsettings>
@@ -25,26 +25,30 @@
  </layer>
  <layer id="2" name="Obstacles" width="20" height="15">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2,2,2,2,2,2,2,8,8,8,0,8,8,8,6,0,0,
-0,0,0,2,2,5,6,6,6,6,0,0,0,0,0,0,0,6,0,0,
-0,0,0,2,2,0,6,6,6,6,0,0,0,0,0,0,0,6,6,0,
-0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,
-0,0,0,2,2,0,0,0,0,0,2,2,2,2,2,2,0,5,6,0,
-0,0,0,2,2,5,5,5,5,5,2,2,6,6,6,6,6,6,5,0,
-0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,12,8,12,12,12,12,12,12,8,12,12,12,7,8,12,12,12,8,10,
+11,9,9,9,0,0,0,0,0,0,6,6,9,0,0,0,0,9,6,10,
+11,0,0,0,0,0,0,9,0,6,6,6,9,9,9,9,0,9,6,10,
+11,0,0,0,0,0,0,0,6,6,6,6,9,0,0,0,0,9,6,10,
+11,0,6,6,6,6,6,6,6,6,6,6,9,0,9,9,9,9,6,10,
+11,0,5,0,0,0,0,0,0,0,8,12,8,0,8,12,8,6,6,10,
+11,0,0,0,0,5,6,6,6,6,0,0,0,0,0,0,0,6,6,10,
+11,0,9,0,9,0,6,6,6,6,0,0,0,0,0,0,0,6,6,10,
+11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,10,
+11,0,0,0,0,9,0,0,0,0,0,9,9,9,9,0,0,5,6,10,
+11,9,0,0,0,5,6,0,6,5,9,9,6,6,6,6,6,6,6,10,
+11,0,0,0,0,0,5,0,6,5,9,9,6,6,6,6,6,6,6,10,
+11,0,0,0,9,0,0,0,6,5,9,6,6,6,6,6,6,6,6,10,
+11,0,0,0,0,0,0,0,6,5,9,6,6,6,6,6,6,6,6,10,
+8,12,12,8,12,12,12,12,8,12,8,12,12,12,12,12,8,12,12,12
 </data>
  </layer>
  <objectgroup id="3" name="SpawnPoints">
-  <object id="8" name="SpawnPlayer" x="192" y="288"/>
-  <object id="9" name="NPC" x="416" y="224"/>
+  <object id="8" name="SpawnPlayer" x="64.6667" y="416"/>
+  <object id="9" name="NPC" x="428" y="211">
+   <properties>
+    <property name="keyName" value="level-02"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="Items">
   <object id="1" name="Mushroom" gid="3" x="160" y="256" width="32" height="32">
@@ -80,7 +84,6 @@
   <object id="6" name="Flower" gid="4" x="288" y="320" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="20"/>
-    <property name="keyName" value="level-02"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
@@ -90,9 +93,123 @@
     <property name="damageHp" type="int" value="10"/>
    </properties>
   </object>
+  <object id="28" name="Stone" gid="2" x="128.8" y="223.2" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="37" name="Stone" gid="2" x="96" y="256.8" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="29" name="Stone" gid="2" x="96" y="223.6" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="30" name="Stone" gid="2" x="96" y="192" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="31" name="Stone" gid="2" x="129.2" y="191.2" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="32" name="Stone" gid="2" x="160.4" y="192" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="33" name="Stone" gid="2" x="192" y="192" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="34" name="Stone" gid="2" x="224" y="192" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="35" name="Stone" gid="2" x="255.6" y="192" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="36" name="Stone" gid="2" x="288.8" y="191.6" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="19" name="Stone" gid="2" x="128" y="287.2" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="20" name="Stone" gid="2" x="95.6" y="288.8" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="21" name="Stone" gid="2" x="96.4" y="320" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="22" name="Stone" gid="2" x="128.4" y="320.4" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="23" name="Stone" gid="2" x="128" y="351.6" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="24" name="Stone" gid="2" x="96.4" y="351.2" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="25" name="Stone" gid="2" x="96" y="382.8" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="26" name="Stone" gid="2" x="127.6" y="383.2" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="27" name="Stone" gid="2" x="159.6" y="384.4" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="5" name="Doors">
-  <object id="7" name="Cave" gid="7" x="416" y="192" width="32" height="32">
+  <object id="7" name="Cave" gid="7" x="417" y="32" width="32" height="32">
    <properties>
     <property name="goToWorld" value="map-level-02"/>
     <property name="needKey" value="level-02"/>

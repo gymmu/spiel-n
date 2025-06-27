@@ -4,11 +4,31 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12pt;
+}
+
+.tile-img {
+  height: auto;
+  max-width: 124px;
+}
+
 body {
   background-color: darkslategrey;
   color: white;
-  padding: 0;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.009375rem;
+  background: #121212;
+  color: rgb(255 255 255 / 87%); /* 87% white */
   margin: 0;
+  padding: 12pt;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -28,6 +48,8 @@ main > section {
   padding-bottom: 2rem;
   margin-top: 2rem;
   width: 100%;
+  border-radius: 24pt;
+  max-width: 900px;
 }
 
 main > section:nth-child(2n-1) {
@@ -38,13 +60,25 @@ main > section > h2 {
   text-align: center;
 }
 
+
 .start-btn {
+  color: black;
+  background-color: #e3e3e3;
   padding: 1.5rem;
-  background-color: forestgreen;
-  color: white;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.5rem;
+  border-radius: 24pt;
+}
+
+.bck-btn {
+  color: black;
+  background-color: #e3e3e3;
+  padding: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 24pt;
 }
 
 .start-btn:hover {
@@ -85,4 +119,18 @@ main > section > h2 {
 
 .text-with-image > img {
     width: 70%;
+}
+
+code, pre {
+  background-color: #e0e2ec; /* surface-variant */
+  color: #44474e; /* on-surface-variant */
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.875rem; /* body-medium.size */
+  letter-spacing: 0.015625rem; /* body-medium.tracking */
+  line-height: 1.25rem; /* body-medium.line-height */
+}
+
+code {
+  border-radius: 8px;
+  padding: 0.25rem;
 }

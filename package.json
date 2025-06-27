@@ -1,13 +1,14 @@
 {
-  "name": "phaser-playground",
-  "homepage": "https://gymmu.github.io/phaser-playground",
-  "version": "0.1.0",
+  "name": "spiel-n",
+  "homepage": "https://gymmu.github.io/gymmu/spiel-n",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "scripts": {
     "lint": "prettier --check .",
     "lint-fix": "prettier --write .",
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf docs",
@@ -15,7 +16,7 @@
     "deploy": "gh-pages -d docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "e227474",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^6.3.0",

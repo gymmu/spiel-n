@@ -10,28 +10,44 @@
 
   <body>
     <main>
-      <h1>Unser Spiel</h1>
-      <div class="center margin-tb">
-        <a class="start-btn" href="game.html">Spiel starten</a>
-      </div>
+      <h1>Simple Game</h1>
       <section>
-        <h2>Intro</h2>
-        Eine kurze Einführung in unser Spiel.
+        <h2>Introduction</h2>
+        <center><p>Simple Game based on Phaser 3 and hosted on GitHub Pages.</p></center>
       </section>
       <section>
-        <h2>Spielprinzip</h2>
+        <h2>Objective</h2>
         <div class="text-with-image">
           <img src="img/rpg.png" />
-          <div class="text">Sammle die Blume und gehe in die Höhle.</div>
+          <div class="text">Collect keys by killing enemies to exit the levels</div>
+          <div class="text">You only need to kill one Enemy to exit a level.</div>
         </div>
       </section>
       <section>
-        <h2>Steuerung</h2>
-        <div class="controls-table">
-          <div class="controls-row">
-            <pre>Pfeiltasten</pre>
-            <span>In Richtung laufen</span>
-          </div>
+        <h2>Controls</h2>
+         <p>Move using the <code>WASD</code> keys</p>
+          <p>You can Pick up rocks using the <code>E</code> key</p>
+          <p>Rocks can be put down for later use by pressing <code>E</code>, they can be stacked on eachother for more compact storage.</p>
+          <p>Throw rocks by pressing <code>SPACE</code></p>
+        </div>
+      </section>
+      <section>
+        <h2>Items</h2>
+        <div class="text-with-image">
+          <img src="public/img/meds.png" class="tile-img" alt="">
+          <div class="text"> Syringe with stimulants, increases awareness.</div>
+        </div>
+        <div class="text-with-image">
+          <img src="public/img/poison-flower.png" class="tile-img" alt="">
+          <div class="text">Poisnous flower, slows you down.</div>
+        </div>
+        <div class="text-with-image">
+          <img src="public/img/yeetrock.png" class="tile-img" alt="">
+          <div class="text">Rock, brittle, can be picked up and thrown.</div>
+        </div>
+        <div class="text-with-image">
+          <img src="public/img/boulder.png" class="tile-img" alt="">
+          <div class="text">Boulder, very hard, can't be broken.</div>
         </div>
       </section>
       <div class="center margin-tb">

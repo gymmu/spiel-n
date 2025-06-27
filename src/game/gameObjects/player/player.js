@@ -82,21 +82,22 @@ export function createPlayer(scene, map) {
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   keys = {}
+  lvlCompleted = false
   hp = 10
   maxHp = 100
   speed = 100
   baseSpeed = 100
   gotHit = false
   isAttacking = false
-  attackSpeed = 1500
+  attackSpeed = 100
   inventory = new Array(6).fill(null) // Inventar mit 6 Slots initialisieren
   lastDirection = { x: 0, y: 1 } // Default: down
 
-  constructor(scene, x, y) {
+  constructor (scene, x, y) {
     super(scene, x, y, "player")
     this.scene.add.existing(this)
     this.scene.physics.add.existing(this, false)
-    this.body.collideWorldBounds = false
+    this.body.collideWorldBounds = true
     this.setOrigin(0.5, 0.5)
     this.setSize(24, 24, false)
     this.setOffset(4, 8)
@@ -123,6 +124,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     if (index !== -1) {
       this.inventory[index] = item
       EVENTS.emit("update-inventory", this.inventory)
+      // log the state of the inventory to the console
+      console.log(this.inventory)
       return true
     }
     return false
@@ -276,9 +279,33 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Wenn die Richtung nicht 0 ist, dann erstellen wir ein Projectile
       if (dir.lengthSq() > 0) {
-        new Projectile(this.scene, this.x, this.y, dir)
+        console.log('Inventory:', this.inventory)
+        // Check if there is a stone in the inventory
+        let stoneIndex = -1;
+        for (let i = 0; i < this.inventory.length; i++) {
+          console.log('Checking item at index', i, this.inventory[i])
+          if (this.inventory[i]) {
+            console.log('Found stone at index', i)
+            stoneIndex = i;
+            break;
+          }
+
+        }
+
+        if (stoneIndex !== -1) {
+          console.log('Stone found, removing from inventory')
+          // Remove the stone from the inventory
+          this.removeItemFromInventory(stoneIndex)
+          // Create a new projectile
+          new Projectile(this.scene, this.x, this.y, dir)
+        } else {
+          console.log('No stone found in inventory')
+          // Handle the case when there is no stone in the inventory
+        }
       }
     }
+
+
 
     // Wenn der Spieler getroffen wurde, lasse ihn blinken
     if (this.gotHit) {
@@ -326,16 +353,24 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hp = this.hp - value
     if (this.hp <= 0) {
       this.hp = 0
-      // Get the key of the current scene
+      // clear inventory
+      for (let i = this.inventory.length - 1; i >= 0; i--) {
+        this.removeItemFromInventory(i);
+      }
+      // reset camera mask
+      this.scene.cameraManager.cameraMaskRadius = 120
+      this.scene.cameraManager.setCameraMask()
+      // get current scene
       const levelKey = this.scene.mapKey
 
-      // Restart the same scene again
+      // restart the scene
       this.scene.scene.start("world", { map: levelKey })
     }
 
     // Gleich wie bei `heal()`
     EVENTS.emit("update-hp", this.hp)
   }
+
 
   /**
    * Fügt dem Spieler einen Schlüssel hinzu.
@@ -401,4 +436,5 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const droppedItem = new itemClass(this.scene, x + 32, y, item.props || [])
     this.scene.items.add(droppedItem)
   }
+
 }
