@@ -49,6 +49,7 @@ main > section {
   margin-top: 2rem;
   width: 100%;
   border-radius: 24pt;
+  max-width: 900px;
 }
 
 main > section:nth-child(2n-1) {
